@@ -12,12 +12,14 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final MediaQueryData mediaQueryData = MediaQuery.of(context);
     void _showset() {
       showModalBottomSheet(
+          isScrollControlled: true,
           context: context,
           builder: (context) {
             return Container(
-              padding: EdgeInsets.symmetric(vertical: 20, horizontal: 60),
+              padding: mediaQueryData.viewInsets,
               child: Settingsform(),
             );
           });
