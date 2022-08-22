@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:app/services/auth.dart';
 import 'package:app/shared/constant.dart';
 import 'package:app/shared/loading.dart';
@@ -89,7 +87,6 @@ class _SignInState extends State<SignIn> {
                               });
                             }
                           }
-                          ;
                         },
                         child: Text(
                           'sign in',
