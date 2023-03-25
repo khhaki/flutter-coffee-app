@@ -96,7 +96,8 @@ class _SettingsformState extends State<Settingsform> {
                     'update',
                     style: TextStyle(color: Colors.white),
                   ),
-                  style: ElevatedButton.styleFrom(primary: Colors.pink[400]),
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.pink[400]),
                 )
               ],
             ),
